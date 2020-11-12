@@ -16,6 +16,8 @@
         </p>
     </div>
 
+    @livewire('users-list')
+
     @includeWhen($view == 'index', 'users._filters')
 
     @if ($users->isNotEmpty())
